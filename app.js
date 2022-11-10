@@ -1,7 +1,7 @@
 const {sumar,restar,multiplicar,dividir} = require('./modules/calculadora');
 const comando = process.argv[2];
-const numeroA = process.argv[3];
-const numeroB = process.argv[4];
+const numeroA = +process.argv[3];
+const numeroB = +process.argv[4];
 
 switch (comando) {
     case "sumar":
